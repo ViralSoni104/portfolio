@@ -30,13 +30,15 @@ export const TextGenerateEffect = ({
       }
     );
   }, [scope, animate, duration, filter]);
-
+  function IsKeywordCheck(word:string) {
+    return useMemo(() => bioKeywords.includes(word), [word]);
+  }
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
         <motion.div ref={scope} className="dark:text-white text-black leading-snug tracking-wide">
           {wordsArray.map((word, idx) => {
-            const isKeyword = useMemo(() => bioKeywords.includes(word), [word]);
+            const isKeyword = IsKeywordCheck(word);
             return (
               <motion.span
                 key={word + idx}

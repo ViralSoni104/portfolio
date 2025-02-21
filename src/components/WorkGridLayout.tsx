@@ -1,6 +1,7 @@
 import { workFile } from "@/data";
 import { useState } from "react";
 import Projects from "./Projects";
+import Image from 'next/image';
 
 type workType={
   id:string;
@@ -68,7 +69,7 @@ const WorkGridLayout = () => {
                   {work.category==="Brochures" && (
                     <div className="relative w-full p-4 rounded-md shadow-md border border-gray-700 bg-gray-900 flex flex-col items-center justify-center">
                     {/* First page preview */}
-                    <img
+                    <Image
                       src={removeExtension(work.src) + ".jpg"}
                       alt="PDF Preview"
                       loading="lazy"
@@ -90,7 +91,7 @@ const WorkGridLayout = () => {
                   </div>                
                   )}
                   {work.id.includes("jpeg")&&
-                  <img
+                  <Image
                     src={work.src}
                     alt={activeTab}
                     loading="lazy"

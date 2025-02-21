@@ -8,6 +8,11 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+type navItemType = {
+  name: string;
+  link: string;
+  icon?: JSX.Element;
+};
 export const FloatingNav = ({
   navItems,
   className,
@@ -75,7 +80,7 @@ export const FloatingNav = ({
           border: "2px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: navItemType, idx: number) => (
           navItem.link === "#contact" ? (
             <a
               key={`link=${idx}`}
