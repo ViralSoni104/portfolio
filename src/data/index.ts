@@ -143,7 +143,7 @@ export const projects = [
       techStack: ["Next.js","React.js", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/yourusername/portfolio",
       clyVisiting:true,
-      liveLink:"http://192.168.210.127:3000/",
+      liveLink:"https://portfolio-sandy-seven-34.vercel.app/",
     },
     {
       id: 2,
