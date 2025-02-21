@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --gray-100:#FFFFFF ;
+  --red-pink:#4CAF50 ;
+  --btn-primary:#388E3C;
+  --btn-secondary:#161616 ;
+  --grids-col:#1A1A1A ;
+  --lines-col:#2A2A2A ;
+  --contact-col:#25D366;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
 }
