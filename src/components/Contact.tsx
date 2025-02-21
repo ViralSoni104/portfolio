@@ -12,7 +12,7 @@ const Contact = () => {
       <ModalTrigger
         title={contactTitle}
         position="right"
-        icon={<FaPhone />}
+        icon={FaPhone}
         otherClasses="trigger-btn bg-redpink text-gray-100 hover:bg-slate-950 hover:text-gray-100"
       />
 
