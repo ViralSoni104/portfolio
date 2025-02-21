@@ -31,7 +31,7 @@ workFile.forEach((item) => {
 });
 
 const WorkGridLayout = () => {
-  const removeExtension = (path) => path.replace(/\.[^/.]+$/, "");
+  const removeExtension = (path:string) => path.replace(/\.[^/.]+$/, "");
   const [activeTab, setActiveTab] = useState("Projects");
   const filteredImages = works.filter((work) => work.category === activeTab);
   return (
