@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ["localhost", "api.microlink.io"], // Add your local and production domains
+    domains: ["localhost", "api.microlink.io","portfolio-green-ten-71.vercel.app"], // Add your local and production domains
     remotePatterns: [
       {
         protocol: "https",
@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         protocol: "http",
         hostname: "localhost",
         port:"3000",
+        pathname: "/work/**",
+      },
+      {
+        protocol: "https",
+        hostname: "portfolio-green-ten-71.vercel.app",
         pathname: "/work/**",
       },
     ],
