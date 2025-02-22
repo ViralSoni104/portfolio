@@ -34,7 +34,6 @@ const WorkGridLayout = () => {
   const removeExtension = (path:string) => path.replace(/\.[^/.]+$/, "");
   const [activeTab, setActiveTab] = useState("Projects");
   const filteredImages = works.filter((work) => work.category === activeTab);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
   return (
     <div className="w-full bg-black border text-gray-100 dark:bg-black dark:border-white/[0.2] border border-nuteral-800 p-2">
       <div className="flex  flex-col md:flex-row grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
