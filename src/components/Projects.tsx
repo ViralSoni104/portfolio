@@ -34,7 +34,7 @@ export default function Projects() {
               ))}
             </div>
             {project.clyVisiting && 
-              <LinkPreview url={project.liveLink} className="mt-auto mb-3 md:-mb-4 flex items-center justify-center gap-10 bg-white/40 opacity-65 text-white px-3 py-2 rounded-md">
+              <LinkPreview url={project.liveLink} className="mt-auto mb-3 md:-mb-4 flex items-center justify-center gap-2 bg-white/40 opacity-65 text-white px-3 py-2 rounded-md">
                 <span className="animate-ping bg-contactCol rounded-xl w-2 h-2"></span>
                 <p>Currently Visiting</p>
               </LinkPreview>
