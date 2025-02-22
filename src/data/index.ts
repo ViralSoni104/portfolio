@@ -182,4 +182,3 @@ export const projects = [
       liveLink:"https://mangiferaindica.in/",
     },
   ];
-  

@@ -48,7 +48,7 @@ export const ModalTrigger = ({
 }: {
   title:string;
   position:string;
-  icon:React.ElementType;
+  icon:React.ReactNode;
   otherClasses?: string;
 }) => {
   const { setOpen } = useModal();
