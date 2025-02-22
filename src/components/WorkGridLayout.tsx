@@ -34,6 +34,7 @@ const WorkGridLayout = () => {
   const removeExtension = (path:string) => path.replace(/\.[^/.]+$/, "");
   const [activeTab, setActiveTab] = useState("Projects");
   const filteredImages = works.filter((work) => work.category === activeTab);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
   return (
     <div className="w-full bg-black border text-gray-100 dark:bg-black dark:border-white/[0.2] border border-nuteral-800 p-2">
       <div className="flex  flex-col md:flex-row grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
@@ -70,7 +71,7 @@ const WorkGridLayout = () => {
                     <div className="relative w-full p-4 rounded-md shadow-md border border-gray-700 bg-gray-900 flex flex-col items-center justify-center">
                     {/* First page preview */}
                     <Image
-                        src={removeExtension(work.src)+".jpg"}
+                        src={`${baseUrl}/${removeExtension(work.src)}.jpg`}
                         alt="PDF Preview"
                         loading="lazy"
                         width={500}
@@ -94,7 +95,7 @@ const WorkGridLayout = () => {
                   )}
                   {work.id.includes("jpeg")&&
                   <Image
-                    src={work.src}
+                    src={`${baseUrl}/${work.src}`}
                     alt={activeTab}
                     loading="lazy"
                     width={500}
