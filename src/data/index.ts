@@ -11,7 +11,7 @@ export const navItems = [
 export const name="Viral R. Soni";
 export const email="sviral572@gmail.com";
 export const positions = "Full Stack Developer & Graphic Designer";
-export const bio="Full stack developer & graphic designer with 3+ years of experience in crafting dynamic web applications and impactful visual designs. seeking freelance and full-time opportunities to innovate and grow.";
+export const bio="Full stack developer & graphic designer with 3+ years of experience in crafting impactful visual designs. seeking freelance and full-time opportunities to innovate and grow.";
 export const bioKeywords = ["Full", "stack", "developer", "&", "graphic", "designer", "3+", "years", "experience"];
 
 
@@ -26,13 +26,13 @@ export const stack = [
     {
         id:1,
         title:"Languages",
-        desc:"C, C++, C#, HTML, CSS, JavaScript, Java, PHP, Pyhton",
+        desc:"C, C++, C#, HTML, CSS, JavaScript, Java, PHP, Python, SQL, TypeScript",
         Icon: FaCode,
     },
     {
         id:2,
         title:"Frameworks/Libraries",
-        desc:"NodeJs, ReactJs, ExpressJs, NextJs, Django, Tailwind Css, Bootstrap, .NET",
+        desc:"Node.js, React.js, Express.js, Next.js, Django, Tailwind CSS, Bootstrap, .NET, WordPress",
         Icon: FaCodeBranch,
     },
     {
@@ -44,7 +44,7 @@ export const stack = [
     {
         id:4,
         title:"Tools",
-        desc:"Postman, Visual Studio Code, Versel, Git, Github",
+        desc:"Android Studio, Postman, Visual Studio Code, Versel, Render, Railway, Git, GitHub",
         Icon: FaTools,
     },
     {
@@ -65,7 +65,7 @@ export const workFile =[
     },
     {
         title:"Logos",
-        files:7,
+        files:8,
         type:"images"
     },
     {
