@@ -131,7 +131,7 @@ export const socialList=[
     {
         id:3,
         Icon:FaLinkedin,
-        link:"https://www.linkedin.com/in/viral-soni-4a1335148?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        link:"https://www.linkedin.com/in/viral-soni-4a1335148",
     },
 ];
 
