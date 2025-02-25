@@ -33,6 +33,7 @@ workFile.forEach((item) => {
 const WorkGridLayout = () => {
   const removeExtension = (path:string) => path.replace(/\.[^/.]+$/, "");
   const [activeTab, setActiveTab] = useState("Projects");
+  
   const filteredImages = works.filter((work) => work.category === activeTab);
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
   return (
@@ -63,7 +64,7 @@ const WorkGridLayout = () => {
               {filteredImages.map((work) => (
                 <div key={work.id} className="overflow-hidden rounded-sm shadow-lg">
                   {work.category==="Videos"&&
-                    <video key={work.id} controls preload="metadata" className="w-auto rounded-sm shadow-lg">
+                    <video key={work.id} controls preload="auto" className="w-auto rounded-sm shadow-lg">
                       <source src={work.src} type="video/mp4" />
                     </video>
                   }
