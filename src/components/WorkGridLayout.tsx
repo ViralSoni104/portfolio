@@ -64,7 +64,7 @@ const WorkGridLayout = () => {
               {filteredImages.map((work) => (
                 <div key={work.id} className="overflow-hidden rounded-sm shadow-lg">
                   {work.category==="Videos"&&
-                    <video key={work.id} controls preload="auto" className="w-auto rounded-sm shadow-lg">
+                    <video key={work.id} controls preload="metadata" className="w-auto rounded-sm shadow-lg">
                       <source src={work.src} type="video/mp4" />
                     </video>
                   }
