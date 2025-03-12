@@ -26,6 +26,7 @@ workFile.forEach((item) => {
         category: item.title,
         src:`work/${item.title}/${item.title.toLowerCase()}_(${i}).${fileType}`,
       });
+      console.log(works);
     }
   }
 });
@@ -71,7 +72,7 @@ const WorkGridLayout = () => {
                   {work.category==="Brochures" && (
                     <div className="relative w-full p-4 rounded-md shadow-md border border-gray-700 bg-gray-900 flex flex-col items-center justify-center">
                     {/* First page preview */}
-                    <Image
+                    <img
                         src={`${baseUrl}/${removeExtension(work.src)}.jpg`}
                         alt="PDF Preview"
                         loading="lazy"

@@ -61,47 +61,47 @@ export const workFile =[
     {
         title:"Projects",
         files:1,
-        ext:""
+        ext:"",
     },
     {
         title:"Logos",
-        files:8,
-        type:"images"
+        files:9,
+        ext:".jpeg",
     },
     {
         title:"Festival Post",
         files:18,
-        ext:".jpeg"
+        ext:".jpeg",
     },
     {
         title:"Advertisment Post",
-        files:22,
-        ext:".jpeg"
+        files:24,
+        ext:".jpeg",
     },
     {
         title:"Cards",
         files:5,
-        ext:".jpeg"
+        ext:".jpeg",
     },
     {
         title:"Posters",
         files:18,
-        ext:".jpeg"
+        ext:".jpeg",
     },
     {
         title:"Banners",
-        files:6,
-        ext:".jpeg"
+        files:10,
+        ext:".jpeg",
     },
     {
         title:"Brochures",
-        files:2,
-        ext:".pdf"
+        files:3,
+        ext:".pdf",
     },
     {
         title:"Videos",
         files:4,
-        ext:".mp4"
+        ext:".mp4",
     },
 ];
 export const copyright=`${new Date().getFullYear()} </VR Soni> | Built with Next.js & Tailwind CSS`;
