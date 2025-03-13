@@ -38,7 +38,7 @@ const WorkGridLayout = () => {
   const filteredImages = works.filter((work) => work.category === activeTab);
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
   return (
-    <div className="w-full bg-black border text-gray-100 dark:bg-black dark:border-white/[0.2] border border-nuteral-800 p-2">
+    <div className="w-full bg-black text-gray-100 dark:bg-black">
       <div className="flex  flex-col md:flex-row grid grid-cols-1 md:grid-cols-4 gap-4 p-2">
         {/* Sidebar Tabs */}
         <div className="flex flex-row overflow-x-auto md:flex-col col-span-full md:col-span-1 col-start-1 gap-4 p-4 border border-white/[0.2]">
@@ -56,7 +56,7 @@ const WorkGridLayout = () => {
             </button>
           ))}
         </div>
-        <div className="col-span-1 md:col-span-3 flex flex-row">
+        <div className="col-span-1 md:col-span-3 flex flex-row p-4 border border-white/[0.2]">
           {activeTab === "Projects" ? (
             <Projects/>
           ):
