@@ -56,7 +56,7 @@ const WorkGridLayout = () => {
             </button>
           ))}
         </div>
-        <div className="col-span-1 md:col-span-3 flex flex-row p-4 border border-white/[0.2]">
+        <div className="col-span-1 md:col-span-3 flex flex-row p-2 border border-white/[0.2]">
           {activeTab === "Projects" ? (
             <Projects/>
           ):
