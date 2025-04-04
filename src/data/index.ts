@@ -70,7 +70,7 @@ export const workFile =[
     },
     {
         title:"Festival Post",
-        files:19,
+        files:18,
         ext:".jpeg",
     },
     {
@@ -90,7 +90,7 @@ export const workFile =[
     },
     {
         title:"Banners",
-        files:12,
+        files:10,
         ext:".jpeg",
     },
     {
